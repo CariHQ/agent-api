@@ -43,8 +43,8 @@ services:
   api:
     build:
       context: .
-    image: idchain/iea-api
-    container_name: idchain-api
+    image: carihq/agent-api
+    container_name: agent-api
     environment:
       - RUST_LOG=${RUST_LOG-debug}
       - IDC_API_LOG_LEVEL=${IDC_API_LOG_LEVEL-debug}
