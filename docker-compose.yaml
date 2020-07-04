@@ -24,7 +24,7 @@ services:
 
   mongodb:
     image: mongo:4
-    command: --smallfiles
+    # command: --smallfiles
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${IDC_API_DB_USER}
       - MONGO_INITDB_ROOT_PASSWORD=${IDC_API_DB_PASSWORD}
